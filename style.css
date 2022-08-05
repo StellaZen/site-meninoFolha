@@ -1,13 +1,20 @@
+:root{
+    --rosa: rgb(252, 208, 191);
+    --verde: rgb(72, 124, 72);
+    --verde-escuro: rgb(13, 80, 28);
+}
+
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .banner {
     width: 100%;
+    margin-top: 3px;
 }
 
 .cabecalho {
-    background: rgb(252, 208, 191);
+    background: var(--rosa);
     padding: 5px 0;
     height: 30px;  
 }
@@ -19,41 +26,33 @@ body{
 }
 
 nav {
-    background-color: rgb(72, 124, 72);
+    background-color: var(--verde);
     padding: 5px;
-    position: relative;
-
 }
 
 nav li {
     display:inline;
-    margin: 0 0 0 20px;
+    margin: 0 20px 0 20px;
 }
 
 nav a {
     font-family: 'Amatic SC', cursive;
-    text-transform: uppercase;
-    color: bisque;
+    font-weight: bold;
+    color: var(--rosa);
     font-weight: normal;
     font-size: 40px;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: rgb(13, 80, 28);
+    color: var(--verde-escuro);
     
 }
 
-main h2 {
-    font-family: 'Amatic SC', cursive;
-    text-align: center;
-    font-size: 30px;
-    padding: 20px;
-}
 
 
 footer {
-    background: bisque;
+    background: var(--rosa);
     text-align: center;
     padding: 10px;
     font-family:'Amatic SC', cursive; 
