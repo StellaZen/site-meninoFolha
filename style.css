@@ -1,5 +1,6 @@
 :root{
     --rosa: rgb(252, 208, 191);
+    --rosa-escuro: rgb(235, 150, 116);
     --verde: rgb(72, 124, 72);
     --verde-escuro: rgb(13, 80, 28);
 }
@@ -16,18 +17,19 @@ body{
 .cabecalho {
     background: var(--rosa);
     padding: 5px 0;
-    height: 30px;  
+    height: 50px;  
 }
 
 .logo{
-    width: 100px;
+    width: 150px;
     display: block;
-    margin: auto;
+    padding: 5px 0 0 5px;
 }
 
 nav {
-    background-color: var(--verde);
-    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 50px;
 }
 
 nav li {
@@ -38,17 +40,42 @@ nav li {
 nav a {
     font-family: 'Amatic SC', cursive;
     font-weight: bold;
-    color: var(--rosa);
+    color: var(--verde-escuro);
     font-weight: normal;
     font-size: 40px;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: var(--verde-escuro);
+    color: var(--rosa-escuro);
     
 }
 
+.produtos h2{
+    font-family:'Amatic SC', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.produtos li{
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    transition: 0.5s;   
+}
+
+.produtos img{
+    border: 2px solid var(--verde);
+    border-radius: 50%;
+    margin-top: 10px;
+    opacity: 1;
+}
+
+.produtos li:hover{
+    opacity: 0.5;
+}
 
 
 footer {
