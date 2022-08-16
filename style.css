@@ -3,11 +3,21 @@
     --rosa-escuro: rgb(235, 150, 116);
     --verde: rgb(72, 124, 72);
     --verde-escuro: rgb(13, 80, 28);
+
+    --letra1: 'Amatic SC', cursive;
 }
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+h1{
+    font-family:'Amatic SC', cursive;
+    font-size: 2em;
+    margin: 10px;
+}
+
+
 
 .banner {
     width: 100%;
@@ -23,7 +33,7 @@ body{
 .logo{
     width: 150px;
     display: block;
-    padding: 5px 0 0 5px;
+    padding: 3px 0 0 5px;
 }
 
 nav {
@@ -53,8 +63,8 @@ nav a:hover {
 
 .produtos h2{
     font-family:'Amatic SC', cursive;
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 2em;
+    
 }
 
 .produtos li{
@@ -71,12 +81,35 @@ nav a:hover {
     border-radius: 50%;
     margin-top: 10px;
     opacity: 1;
+    width: 250px;
 }
 
 .produtos li:hover{
     opacity: 0.5;
 }
 
+.linha{
+    background-color: var(--verde);
+    height: 40px;
+    margin-top: 15px;
+}
+
+.texto{
+    width: 600px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size: 1.2em;
+    line-height: 25px;
+}
+
+.texto h2{
+
+        font-family: var(--letra1);
+        font-size: 1.5em;
+        margin: 10px;
+        font-weight: bold;
+}
 
 footer {
     background: var(--rosa);
