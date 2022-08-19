@@ -29,7 +29,7 @@ h1{
 .cabecalho {
     background: var(--rosa);
     padding: 5px 0;
-    height: 50px;  
+    height: 130px;  
 }
 
 .logo-p{
@@ -53,7 +53,7 @@ nav {
 }
 
 nav li {
-    display:inline;
+    display:block;
     margin: 0 20px 0 20px;
 }
 
@@ -149,7 +149,7 @@ footer {
 
     .logo-p{
         display: block;
-        width: 50px;
+        width: 120px;
         margin: 3px;
     }
    
@@ -166,5 +166,12 @@ footer {
 
     .produtos img{
         width: 250px;
+    }
+
+    nav li{
+        display: inline;
+    }
+    .cabecalho{
+        height: 50px;
     }
 }
