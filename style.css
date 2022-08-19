@@ -7,6 +7,7 @@
     --verde-escuro: rgb(13, 80, 28);
 
     --letra1: 'Amatic SC', cursive;
+    --letra2: 'Alegreya Sans', sans-serif;
 }
 
 body{
@@ -14,12 +15,12 @@ body{
 }
 
 h1{
-    font-family:'Amatic SC', cursive;
-    font-size: 2em;
+    font-family: var(--letra2);
+    font-size: 1.8em;
     margin: 10px;
+    color: var(--verde-escuro);
+    font-weight: 300;
 }
-
-
 
 .banner {
     width: 100%;
@@ -139,6 +140,14 @@ footer {
     width: 100px;
 }
 
+footer p{
+    font-family: var(--letra2);
+    color: var(--verde-escuro);
+}
+footer a{
+    color: var(--rosa-escuro);
+}
+
 
 
 @media screen and (min-width: 630px) {
@@ -158,6 +167,7 @@ footer {
     nav li{
         display: inline;
         margin-right: 50px;
+    
     }
     .cabecalho{
         height: 50px;
