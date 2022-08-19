@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root{
     --rosa: rgb(252, 208, 191);
     --rosa-escuro: rgb(235, 150, 116);
@@ -6,8 +8,6 @@
 
     --letra1: 'Amatic SC', cursive;
 }
-
-
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -32,10 +32,18 @@ h1{
     height: 50px;  
 }
 
+.logo-p{
+    display: none;
+}
+
 .logo{
     width: 150px;
     display: block;
     padding: 3px 0 0 5px;
+}
+
+.logo-p{
+    width: 30px;
 }
 
 nav {
@@ -70,7 +78,6 @@ nav a:hover {
 }
 
 .produtos li{
-    display: inline-block;
     padding: 10px;
     text-align: center;
     width: 30%;
@@ -83,7 +90,7 @@ nav a:hover {
     border-radius: 50%;
     margin-top: 10px;
     opacity: 1;
-    width: 250px;
+    width: 200px;
 }
 
 .produtos li:hover{
@@ -96,10 +103,10 @@ nav a:hover {
     margin-top: 15px;
 }
 
-.texto{
+.texto p{
     max-width: 600px;
     display: block;
-    text-align: center;
+    text-align: justify;
     margin: auto;
     font-size: 1.2em;
     line-height: 25px;
@@ -109,10 +116,11 @@ nav a:hover {
 
 .texto h2{
 
-        font-family: var(--letra1);
-        font-size: 1.5em;
-        margin: 10px;
-        font-weight: bold;
+     font-family: var(--letra1);
+     font-size: 1.8em;
+     margin: 10px;
+     font-weight: bold;
+     text-align: center;
 }
 
 .teste{
@@ -130,4 +138,33 @@ footer {
 
 .imagem-rodape {
     width: 100px;
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .logo{
+        display: none;
+    }
+
+    .logo-p{
+        display: block;
+        width: 50px;
+        margin: 3px;
+    }
+   
+}
+
+@media screen and (min-width: 550px) {
+    .produtos li{
+        display: inline-block;
+        padding: 10px;
+        text-align: center;
+        width: 30%;
+        margin: auto;
+    }
+
+    .produtos img{
+        width: 250px;
+    }
 }
