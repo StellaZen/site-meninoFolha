@@ -136,13 +136,10 @@ footer {
 
 }
 
-.imagem-rodape {
-    width: 100px;
-}
-
 footer p{
     font-family: var(--letra2);
     color: var(--verde-escuro);
+    padding: 5px;
 }
 footer a{
     color: var(--rosa-escuro);
@@ -150,7 +147,7 @@ footer a{
 
 
 
-@media screen and (min-width: 630px) {
+@media screen and (min-width: 730px) {
     .produtos li{
         display: inline-block;
         padding: 10px;
@@ -181,5 +178,32 @@ footer a{
 
     .logo-p{
         display: none;
+    }
+}
+
+@media screen and (min-width:610px) and (max-width: 730px) {
+    .produtos li{
+        display: inline-block;
+        padding: 10px;
+        text-align: center;
+        width: 25%;
+        margin: auto;
+    }
+    nav li{
+        display: inline;
+        margin-right: 50px;
+    
+    }
+    .cabecalho{
+        height: 50px;
+    }
+
+    .logo{
+        
+        display: none;
+    }
+    .logo-p{
+        width: 50px;
+        margin: 2px 0 0 5px;
     }
 }
