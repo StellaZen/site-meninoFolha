@@ -12,6 +12,12 @@
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    background-image:url(imagens/back-flor.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+ 
 }
 
 h1{
