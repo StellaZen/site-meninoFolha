@@ -14,21 +14,34 @@
 </head>
 <body>
     <header>
-        <div class="cabecalho"> 
-        <h1><img src="imagens/nome-logo.png" class="logo" alt="Menino Folha - logo"></h1>
-        </div>
-
-        <nav>
+        <div class="cabecalho">
+                <img src="imagens/logo-p-c.png" class="logo-p" alt="logo pequena">
+                <img src="imagens/nome-logo.png" class="logo" alt="Menino Folha - logo">
+            
+         <nav>
             <ul>
                 <li><a href="index.html">home</a></li>
                 <li><a href="segunda-pagina.html">Produtos</a> </li>
                 <li><a href="contato.html">contato</a></li>
             </ul>
         </nav>
-    </header>
+        </div>
+        </header>
 
     <main>
-        
+
+        <form action="formulario.php" method="post">
+            <p>Entre em contato para tirar suas dúvidas e realizar pedidos:</p>
+            <label for="inome">Nome Completo:</label>
+            <input type="text" name="nome" id="inome" required>
+            <label for="iemail">Email:</label>
+            <input type="email" name="email" id="iemail" required placeholder="seuemail@dominio.com">
+            <label for="itel">Telefone:</label>
+            <input type="tel" name="tel" id="itel" required placeholder="(DDD)00000-0000">
+            <label for="imensagem">Sua mensagem:</label>
+            <textarea name="mensagem" id="imensagem" cols="50" rows="12" required></textarea>
+            <input type="submit" value="Enviar" id="enviar">
+        </form>
     </main>
     
 </body>

@@ -12,11 +12,6 @@
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
-    background-image:url(imagens/back-flor.png);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
  
 }
 
@@ -151,7 +146,80 @@ footer a{
     color: var(--rosa-escuro);
 }
 
+/*página de contato*/
 
+form{
+    padding: 20px;
+}
+form >p {
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: lighter;
+    margin: 15px;
+    
+}
+
+input, #imensagem{
+    display: block;
+    width: 400px;
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid var(--verde);
+    border-radius: 10px;
+    transition: 0.500s;
+}
+
+label{
+    margin-left: 15px;
+    font-family: var(--letra1);
+    font-size: 1.7em;
+}
+
+#enviar{
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    font-family: var(--letra2);
+    font-weight: bold;
+    border: none;
+    background-color: rgba(87, 116, 87, 0.719);
+    transition: 0.500s;
+}
+
+#enviar:hover{
+    background-color: var(--verde);
+}
+
+@media screen and (min-width:610px) and (max-width: 730px) {
+    .produtos li{
+        display: inline-block;
+        padding: 10px;
+        text-align: center;
+        width: 25%;
+        margin: auto;
+    }
+    nav li{
+        display: inline;
+        margin-right: 50px;
+    
+    }
+    .cabecalho{
+        height: 50px;
+    }
+
+    .logo{
+        
+        display: none;
+    }
+    .logo-p{
+        width: 50px;
+        margin: 2px 0 0 5px;
+    }
+
+    input, #imensagem{
+        width:500px ;
+    }
+}
 
 @media screen and (min-width: 730px) {
     .produtos li{
@@ -185,31 +253,9 @@ footer a{
     .logo-p{
         display: none;
     }
+
+    input, #imensagem{
+        width: 700px ;
+    }
 }
 
-@media screen and (min-width:610px) and (max-width: 730px) {
-    .produtos li{
-        display: inline-block;
-        padding: 10px;
-        text-align: center;
-        width: 25%;
-        margin: auto;
-    }
-    nav li{
-        display: inline;
-        margin-right: 50px;
-    
-    }
-    .cabecalho{
-        height: 50px;
-    }
-
-    .logo{
-        
-        display: none;
-    }
-    .logo-p{
-        width: 50px;
-        margin: 2px 0 0 5px;
-    }
-}
