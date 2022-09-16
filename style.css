@@ -23,16 +23,17 @@ h1{
     font-weight: 300;
 }
 
-.banner {
+#banner, #banner2 {
     width: 100%;
     margin-top: 3px;
+    transition: 0.500s;
 }
 
 .cabecalho {
     background: var(--rosa);
     padding: 5px 0;
     height: 130px;  
-    transition: 0.500s;
+    transition: 1s;
 }
 
 .logo-p{
