@@ -32,6 +32,7 @@ h1{
     background: var(--rosa);
     padding: 5px 0;
     height: 130px;  
+    transition: 0.500s;
 }
 
 .logo-p{
@@ -40,9 +41,7 @@ h1{
 }
 
 .logo{
-
     display: none;
-    
 }
 
 
